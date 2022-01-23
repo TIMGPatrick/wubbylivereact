@@ -8,6 +8,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import MainLayout from "./components/main-layout/main-layout";
 import Header from "./components/header/header";
 import NavDrawer from "./components/nav-drawer/nav-drawer";
+import Footer from "./components/main-layout/Footer/footer";
+import * as React from "react";
 
 function App() {
     return (
@@ -16,6 +18,7 @@ function App() {
             <NavDrawer></NavDrawer>
             <MainLayout></MainLayout>
             <Button variant="contained">burger menu</Button>
+            <Footer></Footer>
         </div>
     );
 }

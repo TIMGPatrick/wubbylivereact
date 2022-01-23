@@ -21,9 +21,8 @@ function Header() {
                 >
                     <MenuIcon onClick={(event) => dispatch(openDrawer(event)) }/>
                 </IconButton>
-                <h6>drawer state: {drawerState}</h6>
-                <Typography variant="h6" component="div" sx={{flexGrow: 1}}>
-                    Wubby Live!
+                <Typography variant="h6" component="div" align={"left"} sx={{flexGrow: 1}}>
+                    <h1>Wubby Live!</h1>
                 </Typography>
             </Toolbar>
         </AppBar>
