@@ -4,9 +4,10 @@ export const episodeSlice = createSlice({
     name: 'episode',
     initialState: {
         episode: {
-            title:"",
-            description:"",
-            date:""
+            title: "Episode 1",
+            videoSource:"https://90dfvods.fra1.cdn.digitaloceanspaces.com/Ep1/ep1Manifest.mpd",
+            description: "Episode 1 of Wubby watching 90 Day Fiance otherwise known as wubby playing the sims",
+            date: "69/420/2069"
         },
     },
     reducers: {
@@ -18,7 +19,7 @@ export const episodeSlice = createSlice({
             console.log("Print from getEpisode1 test" ,state.episode.date)
             state.episode = {
                 title: "Episode 1",
-                videoSource:"",
+                videoSource:"https://90dfvods.fra1.cdn.digitaloceanspaces.com/Ep1/ep1Manifest.mpd",
                 description: "Episode 1 of Wubby watching 90 Day Fiance otherwise known as wubby playing the sims",
                 date: "69/420/2069"
             }

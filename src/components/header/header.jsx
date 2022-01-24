@@ -1,11 +1,10 @@
 import {AppBar, IconButton, Toolbar, Typography} from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { openDrawer } from '../../store/drawerSlice/drawerSlice'
 
 function Header() {
 
-    const drawerState = useSelector((state) => state.drawer.value)
     const dispatch = useDispatch()
 
     return (
@@ -13,13 +12,14 @@ function Header() {
         <AppBar position="static">
             <Toolbar>
                 <IconButton
+                    onClick={() => dispatch(openDrawer()) }
                     size="large"
                     edge="start"
                     color="inherit"
                     aria-label="menu"
                     sx={{ mr: 2 }}
                 >
-                    <MenuIcon onClick={(event) => dispatch(openDrawer(event)) }/>
+                    <MenuIcon/>
                 </IconButton>
                 <Typography variant="h6" component="div" align={"left"} sx={{flexGrow: 1}}>
                     <h1>Wubby Live!</h1>
